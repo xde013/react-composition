@@ -1,6 +1,9 @@
 # React Composition
 
-A **simple example** to show React composition in practice. It’s a minimal shopping list UI so the focus stays on patterns—**compound components**, **context**, **slots**, and **custom hooks**—rather than app features.
+A **simple example** to show React Composition in practice. It’s a minimal shopping list UI.
+<p align="center">
+  <img src="capture.png" alt="Shopping list app: header, add item form, active items (Milk, Eggs, Bread), done section (Apples), footer with Slots / Compound Components / Hooks" width="600" />
+</p>
 
 ## Tech stack
 
@@ -109,16 +112,4 @@ flowchart TB
   ItemProvider -.-> ListItem
   ItemCtx -.-> Stepper
   ItemCtx -.-> UnitSelect
-```
-
-## Project structure
-
-```
-src/
-├── components/       # UI components and compound pieces
-├── context/          # React context definitions
-├── hooks/            # useShoppingList, useItemContext, etc.
-├── providers/        # ShoppingListProvider, ItemProvider
-├── types.ts
-└── utils/
 ```
